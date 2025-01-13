@@ -3,18 +3,12 @@ import { ConfigProps } from "./types/config";
 
 const config = {
   // REQUIRED
-  appName: "ShipFast",
+  appName: "Simon Orlob",
   // REQUIRED: a short description of your app for SEO tags (can be overwritten)
   appDescription:
-    "The NextJS boilerplate with all you need to build your SaaS, AI tool, or any other web app.",
+    "I Create Software",
   // REQUIRED (no https://, not trialing slash at the end, just the naked domain)
-  domainName: "shipfa.st",
-  crisp: {
-    // Crisp website ID. IF YOU DON'T USE CRISP: just remove this => Then add a support email in this config file (resend.supportEmail) otherwise customer support won't work.
-    id: "",
-    // Hide Crisp by default, except on route "/". Crisp is toggled with <ButtonSupport/>. If you want to show Crisp on every routes, just remove this below
-    onlyShowOnRoutes: ["/"],
-  },
+  domainName: "simonorlob.de",
   stripe: {
     // Create multiple plans in your Stripe dashboard, then add them here. You can add as many plans as you want, just make sure to add the priceId
     plans: [
@@ -25,20 +19,21 @@ const config = {
             ? "price_1Niyy5AxyNprDp7iZIqEyD2h"
             : "price_456",
         //  REQUIRED - Name of the plan, displayed on the pricing page
-        name: "Starter",
+        name: "Quick Start",
         // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
-        description: "Perfect for small projects",
+        description: "Perfect for small automation projects",
         // The price you want to display, the one user will be charged on Stripe.
-        price: 99,
+        price: 999,
         // If you have an anchor price (i.e. $29) that you want to display crossed out, put it here. Otherwise, leave it empty
-        priceAnchor: 149,
+        priceAnchor: 1499,
         features: [
           {
-            name: "NextJS boilerplate",
+            name: "Simple AI automation",
           },
-          { name: "User oauth" },
-          { name: "Database" },
-          { name: "Emails" },
+          { name: "Basic no-code setup" },
+          { name: "1 revision round" },
+          { name: "1 week delivery" },
+          { name: "14 days support" },
         ],
       },
       {
@@ -48,19 +43,40 @@ const config = {
             : "price_456",
         // This plan will look different on the pricing page, it will be highlighted. You can only have one plan with isFeatured: true
         isFeatured: true,
-        name: "Advanced",
-        description: "You need more power",
-        price: 149,
-        priceAnchor: 299,
+        name: "Business Solution",
+        description: "For established businesses seeking efficiency",
+        price: 2499,
+        priceAnchor: 3499,
         features: [
           {
-            name: "NextJS boilerplate",
+            name: "Advanced AI integration",
           },
-          { name: "User oauth" },
-          { name: "Database" },
-          { name: "Emails" },
-          { name: "1 year of updates" },
-          { name: "24/7 support" },
+          { name: "Custom no-code workflows" },
+          { name: "Database setup" },
+          { name: "2 revision rounds" },
+          { name: "2 weeks delivery" },
+          { name: "30 days support" },
+          { name: "Priority email support" },
+        ],
+      },
+      {
+        priceId:
+          process.env.NODE_ENV === "development"
+            ? "price_1O5KtcAxyNprDp7iftKnrrpw"
+            : "price_456",
+        name: "Enterprise Custom",
+        description: "Full-scale digital transformation",
+        price: 4999,
+        priceAnchor: 6999,
+        features: [
+          { name: "Enterprise AI solutions" },
+          { name: "Complex automation setup" },
+          { name: "Custom integrations" },
+          { name: "Unlimited revisions" },
+          { name: "Custom timeline" },
+          { name: "90 days support" },
+          { name: "24/7 priority support" },
+          { name: "Training sessions" },
         ],
       },
     ],

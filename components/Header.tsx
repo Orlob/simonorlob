@@ -13,18 +13,18 @@ const links: {
   href: string;
   label: string;
 }[] = [
-  {
-    href: "/#pricing",
-    label: "Pricing",
-  },
-  {
-    href: "/#testimonials",
-    label: "Reviews",
-  },
-  {
-    href: "/#faq",
-    label: "FAQ",
-  },
+  // {
+  //   href: "/#pricing",
+  //   label: "Pricing",
+  // },
+  // {
+  //   href: "/#testimonials",
+  //   label: "Reviews",
+  // },
+  // {
+  //   href: "/#faq",
+  //   label: "FAQ",
+  // },
 ];
 
 const cta: JSX.Element = <ButtonSignin extraStyle="btn-primary" />;
@@ -105,7 +105,7 @@ const Header = () => {
         </div>
 
         {/* CTA on large screens */}
-        <div className="hidden lg:flex lg:justify-end lg:flex-1">{cta}</div>
+        {/* <div className="hidden lg:flex lg:justify-end lg:flex-1">{cta}</div> */}
       </nav>
 
       {/* Mobile menu, show/hide based on menu state. */}
@@ -172,7 +172,7 @@ const Header = () => {
             </div>
             <div className="divider"></div>
             {/* Your CTA on small screens */}
-            <div className="flex flex-col">{cta}</div>
+            {/* <div className="flex flex-col">{cta}</div> */}
           </div>
         </div>
       </div>
