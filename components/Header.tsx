@@ -21,10 +21,10 @@ const links: {
   //   href: "/#testimonials",
   //   label: "Reviews",
   // },
-  // {
-  //   href: "/#faq",
-  //   label: "FAQ",
-  // },
+  {
+    href: "/blog",
+    label: "Blog",
+  },
 ];
 
 const cta: JSX.Element = <ButtonSignin extraStyle="btn-primary" />;
