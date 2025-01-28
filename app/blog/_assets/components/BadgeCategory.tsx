@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { categoryType } from "../content";
+import { categoryType } from "../../types";
 
 // This is the category badge that appears in the article page and in <CardArticle /> component
 const Category = ({

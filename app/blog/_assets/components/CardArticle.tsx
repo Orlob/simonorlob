@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import BadgeCategory from "./BadgeCategory";
 import Avatar from "./Avatar";
-import { articleType } from "../content";
+import { articleType } from "../../types";
 
 // This is the article card that appears in the home page, in the category page, and in the author's page
 const CardArticle = ({

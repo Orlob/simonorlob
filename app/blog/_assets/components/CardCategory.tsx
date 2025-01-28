@@ -1,6 +1,6 @@
 import type { JSX } from "react";
 import Link from "next/link";
-import { categoryType } from "../content";
+import { categoryType } from "../../types";
 
 // This is the category card that appears in the home page and in the category page
 const CardCategory = ({
